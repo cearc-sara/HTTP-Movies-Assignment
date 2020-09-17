@@ -98,7 +98,7 @@ body {
 }
 .add-button {
   position: absolute;
-  right:25px;
+  right:100px;
   color:aqua;
   border: 1px solid grey;
   padding: 5px 10px;
