@@ -32,7 +32,9 @@ const App = () => {
       <Route exact path="/">
         <MovieList movies={movieList} />
       </Route>
-      <Route path='/update-movie/:id' component={MovieForm} />
+      <Route path='/update-movie/:id'>
+        <MovieForm movieList={movieList} setMovieList={setMovieList} />
+      </Route>
       <Route path="/movies/:id">
         <Movie addToSavedList={addToSavedList} movieList={movieList} setMovieList={setMovieList}/>
       </Route>

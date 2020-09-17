@@ -38,7 +38,7 @@ function Movie({ addToSavedList, movieList, setMovieList }) {
     .delete(`http://localhost:5000/api/movies/${movie.id}`)
     .then(res => {
       setMovieList(movieList)
-      history.pushState('/')
+      history.push('/')
     })
     .catch(err => {
       console.log(err)
@@ -52,8 +52,8 @@ function Movie({ addToSavedList, movieList, setMovieList }) {
       <div className="save-button" onClick={saveMovie}>
         Save
       </div>
-      <button onClick={edit}>Edit</button>
-      <button onClick={deleteMovie}>Delete</button>
+      <div className='edit-button' onClick={edit}>Edit</div>
+      <div className='delete-button' onClick={deleteMovie}>Delete</div>
     </div>
   );
 }
