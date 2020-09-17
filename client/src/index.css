@@ -96,6 +96,18 @@ body {
   background-color: rgb(2, 0, 90);
   color: white;
 }
+.add-button {
+  position: absolute;
+  right:25px;
+  color:aqua;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: rgb(101, 9, 221);
+}
+.add-button:hover {
+  background-color: rgb(3, 3, 36);
+  color: white;
+}
 
 .home-button {
   padding: 5px 10px;

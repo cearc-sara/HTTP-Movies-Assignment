@@ -8,10 +8,10 @@ const initialValue = {
     director:'',
     title: '',
     metascore:'',
-    stars: '',
+    stars: [],
 }
 
-function MovieForm ({movieList, setMovieList}) {
+function UpdateMovieForm ({movieList, setMovieList}) {
 const [formValues, setFormValues] = useState(initialValue)
 const {id} = useParams()
 const history = useHistory()
@@ -85,4 +85,4 @@ useEffect(() => {
         </div>
     )
 }
-export default MovieForm
+export default UpdateMovieForm
